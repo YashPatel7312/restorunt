@@ -7,7 +7,7 @@ import g3 from "../assets/grid 3.jpg";
 import g4 from "../assets/grid 4.jpg";
 import g5 from "../assets/grid 5.jpg";
 import g6 from "../assets/grid 6.jpg";
-import Profile1 from "../assets/Profile1.jpg";
+import Profile1 from "../assets/profile1.jpg";
 import Profile2 from "../assets/profile2.jpg";
 import Profile3 from "../assets/profile3.jpg";
 import Profile4 from "../assets/profile4.jpg";
