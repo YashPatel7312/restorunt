@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "../ContactPage.css";
-import Profile1 from "../assets/Profile1.jpg";
+import Profile1 from '../assets/Profile1.jpg';
 import Profile2 from "../assets/profile2.jpg";
 import Profile3 from "../assets/profile3.jpg";
 import Profile4 from "../assets/profile4.jpg";
