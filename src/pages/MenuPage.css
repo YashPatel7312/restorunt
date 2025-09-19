@@ -1,7 +1,6 @@
-/* part 1 */
-
+/* ================= Part 1 - White Section ================= */
 .gridcol2 {
-    padding: 30px 0px 30px 0px;
+    padding: 30px 0;
     background-color: #fff;
 }
 
@@ -14,46 +13,9 @@
     text-transform: uppercase;
 }
 
-.menuparent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-    padding: 50px 80px 100px 80px;
-    background-color: #fff;
-}
-
-.menudiv1 {
-    grid-column: span 2 / span 2;
-    grid-row: span 5 / span 5;
-    justify-content: center;
-    display: flex;
-}
-
-.menudiv2 {
-    grid-column: span 3 / span 3;
-    grid-row: span 5 / span 5;
-    grid-column-start: 3;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    line-height: 1;
-    justify-content: space-around;
-}
-
-.menudiv1 img {
-    height: 710px;
-    width: 450px;
-    margin: auto;
-    border: 5px solid #343a40;
-    padding: 2px;
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.466);
-}
-
 .favourits1 {
     background-image: linear-gradient(#000000b3, #000000b3), url('../assets/favourits.jpg');
-    background-position: 50%;
+    background-position: center;
     background-size: cover;
     margin-bottom: 3rem;
     text-align: center;
@@ -67,123 +29,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
     height: 50vh;
 }
 
-.mfont1 {
-    color: #212529;
-    font-size: 1.75rem;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 0;
-}
-
-.mfont2 {
-    font-size: 1.25rem;
-    text-align: center;
-    margin-top: 0;
-    color: #212529;
-    line-height: 1;
-}
-
-.mfont3 {
-    color: #198754;
-    font-size: 1.75rem;
-    margin-bottom: 0;
-    text-align: center;
-    font-weight: 700;
-    margin-top: 0;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-
-
-/* part 2 */
-
-.gridcol {
-    padding: 30px 0px 30px 0px;
-    background-color: #212529;
-}
-
-.menuparent1 {
+.menuparent, .menuparent1 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
+    grid-template-columns: 2fr 3fr; /* menudiv1 + menudiv2 */
+    gap: 20px;
     padding: 50px 80px 100px 80px;
-    background-color: #212529;
 }
 
-.menudiv3 {
-    grid-column: span 2 / span 2;
-    grid-row: span 5 / span 5;
-    justify-content: center;
-    flex-direction: column;
+.menudiv1, .menudiv3 {
     display: flex;
-    line-height: 1;
+    flex-direction: column;
     justify-content: space-around;
-}
-
-.menudiv4 {
-    grid-column: span 3 / span 3;
-    grid-row: span 5 / span 5;
-    grid-column-start: 3;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+}
+
+.menudiv2, .menudiv4 {
     display: flex;
-    line-height: 1;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
-.menudiv4 img {
-    height: 710px;
+/* Images desktop */
+.menudiv1 img, .menudiv4 img {
     width: 450px;
-    margin: auto;
-    border: 5px solid #fff;
+    height: 710px;
+    border: 5px solid #343a40;
     padding: 2px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.466);
 }
 
-.mfont4 {
-    color: #fff;
-    font-size: 1.75rem;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 0;
-}
+/* Fonts desktop */
+.mfont1, .mfont4 { font-size: 1.75rem; text-align: center; font-weight: 600; color: inherit; }
+.mfont2, .mfont5 { font-size: 1.25rem; text-align: center; color: inherit; }
+.mfont3, .mfont6 { font-size: 1.75rem; font-weight: 700; text-align: center; color: inherit; }
 
-.mfont5 {
-    font-size: 1.25rem;
-    text-align: center;
-    margin-top: 0;
-    color: #fff;
-    line-height: 1;
-}
-
-.mfont6 {
-    color: #198754;
-    font-size: 1.75rem;
-    margin-bottom: 0;
-    text-align: center;
-    font-weight: 700;
-    margin-top: 0;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
+/* ================= Part 2 - Dark Section ================= */
+.gridcol {
+    padding: 30px 0;
+    background-color: #212529;
 }
 
 .h1 {
@@ -193,4 +80,81 @@
     align-items: center;
     font-weight: bolder;
     text-transform: uppercase;
+}
+
+.menudiv4 img {
+    width: 450px;
+    height: 710px;
+    margin: auto;
+    border: 5px solid #fff;
+    padding: 2px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Fonts dark section */
+.mfont4 { color: #fff; font-size: 1.75rem; font-weight: 600; text-align: center; margin-top: 0; }
+.mfont5 { color: #fff; font-size: 1.25rem; text-align: center; line-height: 1; margin-top: 0; }
+.mfont6 { color: #198754; font-size: 1.75rem; font-weight: 700; text-align: center; margin: 1em 0; }
+
+/* ================= Media Queries ================= */
+
+/* Tablet View <= 1024px */
+@media (max-width: 1024px) {
+    .menuparent, .menuparent1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 40px 30px 60px 30px;
+    }
+
+    .menudiv1, .menudiv2, .menudiv3, .menudiv4 {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .menudiv1 img, .menudiv4 img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    /* Fonts tablet + color */
+    .mfont1, .mfont2, .mfont3 { color: #212529; }
+    .mfont4, .mfont5, .mfont6 { color: #fff; }
+    .mfont1, .mfont4 { font-size: 1.4rem; }
+    .mfont2, .mfont5 { font-size: 1.1rem; }
+    .mfont3, .mfont6 { font-size: 1.4rem; }
+}
+
+/* Mobile View <= 768px */
+@media (max-width: 768px) {
+    .menuparent, .menuparent1 {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px 15px 40px 15px;
+    }
+
+    .menudiv1, .menudiv2, .menudiv3, .menudiv4 {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .menudiv1 img, .menudiv4 img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 12px;
+    }
+
+    /* Fonts mobile + color */
+    .mfont1, .mfont2, .mfont3 { color: #212529; }
+    .mfont4, .mfont5, .mfont6 { color: #fff; }
+    .mfont1, .mfont4 { font-size: 1.2rem; }
+    .mfont2, .mfont5 { font-size: 1rem; }
+    .mfont3, .mfont6 { font-size: 1.2rem; }
 }

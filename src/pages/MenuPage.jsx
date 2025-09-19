@@ -39,7 +39,7 @@ export default function MenuPage() {
             {/* part 2 */}
             <div className="gridcol">
                 <h1 className="h1">LUNCH</h1>
-                <div className="parent1">
+                <div className="menuparent1">
                     <div className="menudiv3">
                         <div className="menuarea1">
                             <p className="mfont4">Caesar Salad</p>

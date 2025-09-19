@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import "../HomePage.css";
 import aboutImage from "../assets/about us.jpg";
 import g1 from "../assets/grid 1.jpg";
@@ -9,104 +10,119 @@ import g6 from "../assets/grid 6.jpg";
 import footimage from "../assets/where us.jpg";
 
 export default function HomePage() {
+  const navigate = useNavigate();
+
   return (
-    <div className="page">
-      {/* Hero Section */}
-      <main className="content">
-        <div className="hero-text">
-          <p className="welcome">Welcome to</p>
-          <h1 className="restaurant-name">React</h1>
-          <h1 className="restaurant-name">Restaurant</h1>
-          <button className="menu-btn">Our Full Menu</button>
-        </div>
-      </main>
+    <>
+      <div className="page">
+        {/* Hero Section */}
+        <main className="content">
+          <div className="hero-text">
+            <p className="welcome">Welcome to</p>
+            <h1 className="restaurant-name">React</h1>
+            <h1 className="restaurant-name">Restaurant</h1>
+            {/* Button 1 → Menu */}
+            <button className="menu-btn" onClick={() => navigate("/menu")}>
+              Our Full Menu
+            </button>
+          </div>
+        </main>
 
-      {/* About Section */}
-      <div className="parent">
-        <div className="div1">
-          <img src={aboutImage} alt="image1" />
+        {/* About Section */}
+        <div className="parent">
+          <div className="div1">
+            <img src={aboutImage} alt="About Us" />
+          </div>
+          <div className="div2">
+            <p className="aboutus">About Us</p>
+            <p className="font1">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Provident voluptate aut dolore ullam quasi numquam quod molestias
+              cum officiis perspiciatis?
+            </p>
+            <p className="font1">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab magni
+              animi tenetur eaque vel accusamus placeat quaerat ad.
+            </p>
+            {/* Button 2 → About */}
+            <button className="menu-btn1" onClick={() => navigate("/about")}>
+              More About Us
+            </button>
+          </div>
         </div>
-        <div className="div2">
-          <p className="aboutus">About Us</p>
-          <p className="font1">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident voluptate aut dolore ullam quasi numquam quod molestias cum officiis perspiciatis?
-          </p>
-          <p className="font1">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab magni animi tenetur eaque vel accusamus placeat quaerat ad.
-          </p>
-          <button className="menu-btn1">More About Us</button>
-        </div>
-      </div>
 
-      {/* Favourites Section */}
-      <aside className="favourits">
-        <h1 className="favouritstext">Our Favourits</h1>
-        <div className="parent1">
-          <div className="div3">
-            <h3 className="font2">FOOD</h3>
-            <ul>
-              <li>
-                <p className="font3">English Breakfast</p>
-                <p className="font4">$ 12</p>
-              </li>
-              <li>
-                <p className="font3">Spicy Beef</p>
-                <p className="font4">$ 15</p>
-              </li>
-              <li>
-                <p className="font3">Saghatti Bologness</p>
-                <p className="font4">$ 11</p>
-              </li>
-            </ul>
+        {/* Favourites Section */}
+        <aside className="favourits">
+          <h1 className="favouritstext">Our Favourits</h1>
+          <div className="parent1">
+            <div className="div3">
+              <ul>
+                <li>
+                  <span className="font3">English Breakfast</span>
+                  <span className="font4">$ 12</span>
+                </li>
+                <li>
+                  <span className="font3">Spicy Beef</span>
+                  <span className="font4">$ 15</span>
+                </li>
+                <li>
+                  <span className="font3">Saghetti Bolognese</span>
+                  <span className="font4">$ 11</span>
+                </li>
+              </ul>
+            </div>
+            <div className="div4">
+              <ul>
+                <li>
+                  <span className="font3">coffee</span>
+                  <span className="font4">$ 2</span>
+                </li>
+                <li>
+                  <span className="font3">Juice</span>
+                  <span className="font4">$ 1</span>
+                </li>
+                <li>
+                  <span className="font3">Spirits</span>
+                  <span className="font4">$ 5</span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div className="div4">
-            <h3 className="font2">DRINKS</h3>
-            <ul>
-              <li>
-                <p className="font3">Coffee</p>
-                <p className="font4">$ 2</p>
-              </li>
-              <li>
-                <p className="font3">Juice</p>
-                <p className="font4">$ 1</p>
-              </li>
-              <li>
-                <p className="font3">Spirits</p>
-                <p className="font4">$ 5</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <button className="menu-btn2">OUR FULL MENU</button>
-      </aside>
+          {/* Button 3 → Menu */}
+          <button className="menu-btn2" onClick={() => navigate("/menu")}>
+            OUR FULL MENU
+          </button>
+        </aside>
 
-      {/* Gallery Section */}
-      <aside className="gallery">
-        <h1>IMAGE GALLERY</h1>
-        <div className="parent2">
-          <div className="div5">
-            <img src={g1} alt="image2" className="image2" />
+        {/* Gallery Section */}
+        <aside className="gallery">
+          <h1 className="gallerytext">Our Gallery</h1>
+          <div className="galleryset">
+            <div className="parent2">
+              <div className="div5">
+                <img src={g1} alt="Gallery 1" className="image2" />
+              </div>
+              <div className="div6">
+                <img src={g2} alt="Gallery 2" className="image2" />
+              </div>
+              <div className="div7">
+                <img src={g3} alt="Gallery 3" className="image2"/>
+              </div>
+              <div className="div8">
+                <img src={g4} alt="Gallery 4" className="image2" />
+              </div>
+              <div className="div9">
+                <img src={g5} alt="Gallery 5" className="image2" />
+              </div>
+              <div className="div10">
+                <img src={g6} alt="Gallery 6" className="image2" />
+              </div>
+            </div>
           </div>
-          <div className="div6">
-            <img src={g2} alt="image2" className="image2" />
-          </div>
-          <div className="div7">
-            <img src={g3} alt="image2" className="image2" />
-          </div>
-          <div className="div8">
-            <img src={g4} alt="image2" className="image2" />
-          </div>
-          <div className="div9">
-            <img src={g5} alt="image2" className="image2" />
-          </div>
-          <div className="div10">
-            <img src={g6} alt="image2" className="image2" />
-          </div>
-        </div>
-      </aside>
+        </aside>
 
-      {/* ✅ Footer Section */}
-      <section className="contact-info">
+        {/* Footer / Where Section */}
+        <section className="contact-info">
         <div className="parent3">
           <div className="div11">
             <div className="wharearea">
@@ -125,7 +141,8 @@ export default function HomePage() {
           </div>
         </div>
       </section >
+      </div>
       <footer />
-    </div>
+    </>
   );
 }

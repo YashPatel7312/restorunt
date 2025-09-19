@@ -285,3 +285,130 @@ textarea {
     unicode-bidi: isolate;
     height: 50vh;
 }
+
+
+/* ===== Media Queries ===== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .contactparent3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 20px 40px 50px 40px;
+    }
+    .contactdiv11, .contactdiv12 {
+        grid-column: span 1;
+        grid-row: auto;
+        width: 100%;
+    }
+    .contactdiv12 form {
+        width: 100%;
+    }
+    .contactreviewparent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .contactparent3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 10px 20px 50px 20px;
+    }
+    .contactdiv11, .contactdiv12 {
+        width: 100%;
+        grid-column: span 1;
+        grid-row: auto;
+    }
+    .contactdiv12 form {
+        width: 100%;
+        padding: 10px;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contactreviewparent {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .contacttestimonial-card {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+    .contactprofile-img {
+        width: 50px;
+        height: 50px;
+    }
+    .contactprofile-name {
+        font-size: 1rem;
+    }
+    .contactreviewfont {
+        font-size: 2rem;
+    }
+}
+/* ===== Tablet ===== */
+@media (max-width: 1024px) {
+    .contactparent3 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 50px 30px 80px 30px;
+    }
+    .contactdiv11, .contactdiv12 {
+        grid-column: span 2;
+        grid-row: auto;
+    }
+    .contactdiv12 img {
+        width: 100%;
+        height: auto;
+    }
+    .contactreviewparent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+    .contactparent3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+        padding: 30px 15px 50px 15px;
+    }
+    .contactdiv11, .contactdiv12 {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+    .contactdiv12 img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .reservation-form .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .reservation-form .form-group input,
+    .reservation-form .form-group textarea {
+        width: 100%;
+    }
+    .contactreviewparent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+    .contactreviewdiv1, .contactreviewdiv2,
+    .contactreviewdiv3, .contactreviewdiv4 {
+        grid-column: 1 / -1;
+    }
+    .contactreviewfont {
+        font-size: 1.8rem;
+    }
+}

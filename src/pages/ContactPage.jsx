@@ -81,7 +81,7 @@ export default function ContactPage() {
   return (
     <div>
       <div className="favourits3">
-          <h1 className="favouritstext3">About</h1>
+          <h1 className="favouritstext3">CONTACT</h1>
         </div>
       <section className="contactsection">
         <div className="contactparent3">
@@ -100,7 +100,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* ✅ Contact Form */}
+          {/* Contact Form */}
           <div className="contactdiv12">
             <form onSubmit={handleSubmit} className="reservation-form">
               <div className="form-row">
@@ -204,7 +204,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ✅ Review Section */}
+      {/* Review Section */}
       <div className="contactreview">
         <h1 className="contactreviewfont">REVIEW</h1>
         <div className="contactreviewparent">
