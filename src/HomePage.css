@@ -1,0 +1,618 @@
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: url("./assets/home.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+    color: #fff;
+    margin-top: 70px;
+    /* 🔹 adjust to navbar height */
+}
+
+.hero-text {
+    color: #000;
+    padding: 150px 80px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.welcome {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.restaurant-name {
+    font-size: 5rem;
+    font-weight: 700;
+    font-weight: bold;
+    margin: 8px 0 20px 0;
+}
+
+.menu-btn {
+    padding: 10px 20px;
+    background: #198754;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.menu-btn:hover {
+    background: #115e3a;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    padding: 100px 0px 100px 0px;
+}
+
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 5 / span 5;
+    justify-content: center;
+    display: flex;
+}
+
+.div2 {
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    grid-column-start: 3;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    padding: 0px 80px 0px 80px;
+}
+
+.div1 img {
+    height: 472px;
+    width: 318px;
+    margin: auto;
+    border: 5px solid #343a40;
+    padding: 2px;
+}
+
+.aboutus {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+}
+
+.font1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    color: gray;
+}
+
+.menu-btn1 {
+    padding: 10px 20px;
+    background: #fff;
+    color: #198754;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 20px;
+    border: 1px solid #198754;
+}
+
+.menu-btn1:hover {
+    background: #198754;
+    color: #fff;
+}
+
+.favourits {
+    background-image: linear-gradient(#000000b3, #000000b3), url("./assets/favourits.jpg");
+    background-position: 50%;
+    background-size: cover;
+    margin-bottom: 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    font-size: 30px;
+}
+
+.favouritstext {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    margin: 0px 0px 48px 0px;
+    font-size: 2.5rem;
+}
+
+.gallerytext {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    margin: 0px 0px 48px 0px;
+    font-size: 2.5rem;
+}
+
+.parent1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div3 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.div4 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.div3 li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div4 li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.font2 {
+    color: #fff;
+    font-weight: 700;
+    opacity: 1;
+    font-size: 30px;
+}
+
+.font3 {
+    color: #fff;
+    font-weight: 500;
+    opacity: 1;
+    font-size: 20px;
+}
+
+.font4 {
+    color: #198754;
+    font-weight: 500;
+    margin-left: 50px;
+    opacity: 1;
+}
+
+.menu-btn2 {
+    margin: 0px 0px 20px 0px;
+    padding: 10px 20px;
+    background: #198754;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-weight: 600;
+    opacity: 1;
+}
+
+.menu-btn2:hover {
+    background: #115e3a;
+}
+
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* Desktop: 6 columns */
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.parent2 div {
+    border: 5px solid #343a40;
+    padding: 2px;
+    overflow: hidden;
+}
+
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row: span 6 / span 6;
+    border: 5px solid #343a40;
+    padding: 2px;
+}
+
+.div6 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    border: 5px solid #343a40;
+    padding: 2px;
+}
+
+.div7 {
+    grid-column: span 2 / span 2;
+    grid-row: span 6 / span 6;
+    grid-column-start: 5;
+    border: 5px solid #343a40;
+    padding: 2px;
+}
+
+.div8 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 7;
+    border: 5px solid #343a40;
+    padding: 2px;
+}
+
+.div9 {
+    grid-column: span 2 / span 2;
+    grid-row: span 6 / span 6;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    border: 5px solid #343a40;
+    padding: 2px;
+}
+
+.div10 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 7;
+    border: 5px solid #343a40;
+    overflow: hidden;
+    padding: 2px;
+}
+
+.image2 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.galleryset {
+    margin: 0px 100px 0px 100px;
+}
+
+.gallery {
+    margin: 30px 80px 30px 80px;
+    text-align: center;
+    display: flex;
+    color: #000;
+    flex-direction: column;
+}
+
+.parent3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    background-color: #343a40;
+    padding: 100px 0px 100px 0px;
+}
+
+.div11 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.div12 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div12 img {
+    height: 472px;
+    width: 318px;
+    margin: auto;
+    border: 5px solid #fff;
+    padding: 2px;
+}
+
+.whare {
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    font-size: 2rem;
+}
+
+.wharetext {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.whare2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    font-size: 1.5rem;
+}
+
+.wharearea {
+    line-height: 0.5;
+}
+
+/* ===== Existing Home Page CSS above remains as-is ===== */
+
+/* ===== Media Queries ===== */
+
+/* ===== Tablet ===== */
+@media (max-width: 1024px) {
+    .content {
+        padding: 30px;
+    }
+
+    .hero-text {
+        padding: 100px 40px;
+        font-size: 1rem;
+    }
+
+    .restaurant-name {
+        font-size: 4rem;
+    }
+
+    .parent2 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-rows: repeat(3, auto);   /* 3 rows */
+        gap: 15px;
+    }
+
+    /* Left column */
+    .div5 { grid-column: 1; grid-row: 1; }
+    .div7 { grid-column: 1; grid-row: 2; }
+    .div9 { grid-column: 1; grid-row: 3; }
+
+    /* Right column */
+    .div6 { grid-column: 2; grid-row: 1; }
+    .div8 { grid-column: 2; grid-row: 2; }
+    .div10 { grid-column: 2; grid-row: 3; }
+
+    .div6 img,
+    .div8 img,
+    .div10 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .parent {
+        grid-template-columns: 1fr; /* single column */
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+    }
+
+    .div1 { grid-column: 1; grid-row: 1; }
+    .div2 { grid-column: 1; grid-row: 2; }
+
+    .div1 img,
+    .div2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+        .parent1 {
+        grid-template-columns: 1fr; /* instead of repeat(2, 1fr) */
+        grid-template-rows: repeat(2, auto);
+        gap: 15px;
+        padding: 50px 30px;
+    }
+
+    .div3 { grid-column: 1; grid-row: 1; }
+    .div4 { grid-column: 1; grid-row: 2; }
+
+    .parent3 {
+        grid-template-columns: 1fr; /* single column */
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+        padding: 40px 30px;
+    }
+
+    .div11 { grid-column: 1; grid-row: 1; }
+    .div12 { grid-column: 1; grid-row: 2; }
+
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+    .content {
+        padding: 20px;
+        margin-top: 60px;
+    }
+
+    .hero-text {
+        padding: 50px 20px;
+        font-size: 0.9rem;
+    }
+
+    .restaurant-name {
+        font-size: 2.8rem;
+    }
+
+    .parent2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        padding: 30px 15px;
+    }
+
+    .menu-btn,
+    .menu-btn1,
+    .menu-btn2 {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .favourits,
+    .favourits3 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .favouritstext,
+    .favouritstext3,
+    .gallerytext {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .galleryset,
+    .gallery {
+        margin: 0 15px;
+    }
+
+    .div3 ul,
+    .div4 ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .div3 li,
+    .div4 li {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+    .parent2 {
+        grid-template-columns: 1fr; /* 1 column */
+        grid-template-rows: repeat(6, auto);
+        gap: 10px;
+    }
+
+    .div5 { grid-column: 1; grid-row: 1; }
+    .div6 { grid-column: 1; grid-row: 2; }
+    .div7 { grid-column: 1; grid-row: 3; }
+    .div8 { grid-column: 1; grid-row: 4; }
+    .div9 { grid-column: 1; grid-row: 5; }
+    .div10 { grid-column: 1; grid-row: 6; }
+
+    .parent {
+        grid-template-columns: 1fr; /* still 1 column */
+        grid-template-rows: repeat(2, auto);
+        gap: 15px;
+    }
+
+    .div1 { grid-column: 1; grid-row: 1; }
+    .div2 { grid-column: 1; grid-row: 2; }
+
+    .div1 img,
+    .div2 img {
+        width: 100%;
+        height: auto; /* auto height for small screen */
+        object-fit: cover;
+    }
+
+        .parent1 {
+        grid-template-columns: 1fr; /* already 1 column */
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+        padding: 30px 15px;
+    }
+
+    .div3 { grid-column: 1; grid-row: 1; }
+    .div4 { grid-column: 1; grid-row: 2; }
+
+    .parent3 {
+        grid-template-columns: 1fr; /* still single column */
+        grid-template-rows: repeat(2, auto);
+        gap: 15px;
+        padding: 30px 15px;
+    }
+
+    .div11 { grid-column: 1; grid-row: 1; }
+    .div12 { grid-column: 1; grid-row: 2; }
+}
