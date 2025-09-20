@@ -6,7 +6,6 @@
     text-align: center;
     font-size: 30px;
     width: 100%;
-    /* full width hero */
 }
 
 .favouritstext2 {
@@ -27,7 +26,6 @@
 
 .aboutarea1 {
     padding: 0 80px 0px 80px;
-    /* side margins for all content except hero */
     margin: 0px 0px 100px 0px;
 }
 
@@ -59,7 +57,6 @@
     overflow: hidden;
     width: 540px;
     height: 430px;
-    /* hides any overflow */
 }
 
 .aboutdiv2 {
@@ -67,7 +64,6 @@
     overflow: hidden;
     width: 540px;
     height: 430px;
-    /* hides any overflow */
 }
 
 .aboutimg {
@@ -169,36 +165,32 @@
 
 .aboutreviewparent {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 8px;
 }
 
 .aboutreviewdiv1 {
-    grid-column: span 3 / span 3;
-    grid-row: span 3 / span 3;
+    grid-column: span 1;
+    grid-row: span 1;
     border: none;
 }
 
 .aboutreviewdiv2 {
-    grid-column: span 3 / span 3;
-    grid-row: span 3 / span 3;
-    grid-column-start: 4;
+    grid-column: span 1;
+    grid-row: span 1;
     border: none;
 }
 
 .aboutreviewdiv3 {
-    grid-column: span 3 / span 3;
-    grid-row: span 3 / span 3;
-    grid-row-start: 4;
+    grid-column: span 1;
+    grid-row: span 1;
     border: none;
 }
 
 .aboutreviewdiv4 {
-    grid-column: span 3 / span 3;
-    grid-row: span 3 / span 3;
-    grid-column-start: 4;
-    grid-row-start: 4;
+    grid-column: span 1;
+    grid-row: span 1;
     border: none;
 }
 
@@ -238,29 +230,24 @@
     font-size: 1.1rem;
     font-weight: 600;
     color: #198754;
-    /* Bootstrap green */
 }
-
 
 /* Tablet */
 @media (max-width: 1024px) {
     .aboutparent2 {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-        grid-template-rows: repeat(3, auto);   /* 3 rows */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
         gap: 15px;
     }
 
-    /* Left column */
     .aboutdiv5 { grid-column: 1; grid-row: 1; }
     .aboutdiv7 { grid-column: 1; grid-row: 2; }
     .aboutdiv9 { grid-column: 1; grid-row: 3; }
 
-    /* Right column */
     .aboutdiv6 { grid-column: 2; grid-row: 1; }
     .aboutdiv8 { grid-column: 2; grid-row: 2; }
     .aboutdiv10 { grid-column: 2; grid-row: 3; }
 
-    /* right side images full cover */
     .aboutdiv6 img,
     .aboutdiv8 img,
     .aboutdiv10 img {
@@ -280,7 +267,7 @@
     }
 
     .aboutparent {
-        grid-template-columns: 1fr; /* single column */
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 20px;
     }
@@ -296,9 +283,10 @@
         object-fit: cover;
     }
 
+    /* ✅ aboutreviewparent: 1 column 4 rows */
     .aboutreviewparent {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
         gap: 15px;
     }
 
@@ -307,11 +295,39 @@
         width: 100%;
     }
 
+    .testimonial-card {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .testimonial-text {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .testimonial-footer {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .profile-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profile-name {
+        font-size: 1rem;
+    }
+
+    .aboutreviewfont {
+        font-size: 2rem;
+    }
 }
-/* ===== Mobile (≤768px) ===== */
+
+/* Mobile */
 @media (max-width: 768px) {
     .aboutparent2 {
-        grid-template-columns: 1fr; /* single column */
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
         gap: 10px;
     }
@@ -340,7 +356,7 @@
     }
 
     .aboutparent {
-        grid-template-columns: 1fr; /* single column */
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 15px;
     }
@@ -356,71 +372,15 @@
         object-fit: cover;
     }
 
+    /* ✅ aboutreviewparent: 1 column 4 rows */
     .aboutreviewparent {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: repeat(4, auto);
         gap: 15px;
     }
 
     .aboutreviewdiv1, .aboutreviewdiv2,
     .aboutreviewdiv3, .aboutreviewdiv4 {
-        width: 100%;
-    }
-}
-
-/* ================= Tablet (≤1024px) ================= */
-@media (max-width: 1024px) {
-    .reviewparent {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        gap: 15px;
-    }
-
-    .reviewdiv1, .reviewdiv2,
-    .reviewdiv3, .reviewdiv4 {
-        width: 100%;
-    }
-
-    .testimonial-card {
-        max-width: 100%;
-        margin: 10px auto;
-    }
-
-    .testimonial-text {
-        font-size: 0.95rem;
-        line-height: 1.4;
-    }
-
-    .testimonial-footer {
-        flex-direction: row;
-        gap: 10px;
-    }
-
-    .profile-img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .profile-name {
-        font-size: 1rem;
-    }
-
-    .reviewfont {
-        font-size: 2rem;
-    }
-}
-
-/* ================= Mobile (≤768px) ================= */
-@media (max-width: 768px) {
-    .reviewparent {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 15px;
-    }
-
-    .reviewdiv1, .reviewdiv2,
-    .reviewdiv3, .reviewdiv4 {
-        grid-column: 1 / -1;
         width: 100%;
     }
 
@@ -449,7 +409,7 @@
         font-size: 0.95rem;
     }
 
-    .reviewfont {
+    .aboutreviewfont {
         font-size: 1.8rem;
     }
 }
