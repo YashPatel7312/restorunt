@@ -1,12 +1,15 @@
 /* ---------------- Navbar ---------------- */
 .navbar {
-  display: flex;
+   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
   background-color: #f8f9fa;
-  z-index: 100;
-  position: relative;
+  width: 100%;
+  position: fixed;
+  z-index: 1030;
+  top: 0;
+  padding: 8px 20px; /* 👈 height control */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* optional shadow */
 }
 
 .logo2 {
@@ -14,11 +17,11 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
+  text-align: start;
 }
 
 .nav {
   display: flex;
-  gap: 20px;
   align-items: center;
 }
 
@@ -42,14 +45,17 @@
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+  border: 1px solid #3d3d3d;
+  margin: 0px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
 }
 
 .hamburger span {
   height: 3px;
   width: 25px;
-  background: #000;
-  border: 1px solid #000;
-  border-radius: 2px;
+  border: 2px solid #3d3d3d;
+  border-radius: 60px;
 }
 
 /* Responsive navbar */
@@ -63,11 +69,11 @@
     flex-direction: column;
     background-color: #f8f9fa;
     position: absolute;
-    top: 60px;
+    top: 0px;
     right: 0;
     width: 100%;
     text-align: center;
-    padding: 10px 0;
+    padding: 8px 0;
     gap: 0;
   }
 
@@ -76,7 +82,7 @@
   }
 
   .nav-btn {
-    padding: 12px 0;
+    padding: 8px 0;
     width: 100%;
   }
 }
@@ -84,17 +90,15 @@
 /* ---------------- Footer ---------------- */
 .footer {
   text-align: center;
+  justify-content: space-around;
   padding: 15px;
   background-color: #f8f9fa;
   color: #000;
   font-size: 0.9rem;
-  margin-top: 50px;
 }
 
 /* ---------------- General ---------------- */
 body {
-  margin: 0;
-  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 

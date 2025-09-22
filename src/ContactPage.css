@@ -226,6 +226,10 @@ textarea {
     text-align: center;
     font-size: 30px;
     width: 100%;
+    justify-content: center !important;
+    height: 100% !important;
+    margin: 56px 0px;
+    padding: 12px 0px;
 }
 
 .favouritstext3 {

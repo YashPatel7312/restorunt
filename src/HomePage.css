@@ -1,8 +1,14 @@
+.home-page {
+    min-height: 80vh;
+    background: #f9f9f9;
+}
+.page{
+    justify-content: space-around;
+}
 .content {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     background: url("./assets/home.jpg") no-repeat center center;
     background-size: cover;
     padding: 40px;
@@ -14,8 +20,6 @@
 .hero-text {
     color: #000;
     padding: 150px 80px;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
 }
 
 .welcome {
@@ -127,6 +131,11 @@
     padding-bottom: 3rem;
     padding-top: 3rem;
     font-size: 30px;
+    box-sizing: border-box;
+}
+
+.setbg{
+    padding: 48px 0px;
 }
 
 .favouritstext {
@@ -136,14 +145,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-weight: bold;
-    unicode-bidi: isolate;
-    margin: 0px 0px 48px 0px;
     font-size: 2.5rem;
+    margin: 0px 0px 48px 0px ;
 }
 
 .gallerytext {
@@ -153,13 +157,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-weight: bold;
     unicode-bidi: isolate;
-    margin: 0px 0px 48px 0px;
     font-size: 2.5rem;
 }
 
@@ -182,7 +181,6 @@
 .div4 {
     grid-column: span 2 / span 2;
     grid-row: span 4 / span 4;
-    grid-column-start: 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,6 +211,10 @@
     align-items: center;
 }
 
+.cf{
+    color: #fff;
+}
+
 .font2 {
     color: #fff;
     font-weight: 700;
@@ -225,6 +227,8 @@
     font-weight: 500;
     opacity: 1;
     font-size: 20px;
+    margin-bottom: 1rem;
+    margin-top: 0;
 }
 
 .font4 {
@@ -232,6 +236,8 @@
     font-weight: 500;
     margin-left: 50px;
     opacity: 1;
+    margin-bottom: 1rem;
+    margin-top: 0;
 }
 
 .menu-btn2 {
@@ -250,6 +256,9 @@
     margin: auto;
     font-weight: 600;
     opacity: 1;
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-font-size: 1.25rem;
 }
 
 .menu-btn2:hover {
@@ -445,20 +454,17 @@
     }
 
     .parent2 {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-        grid-template-rows: repeat(3, auto);   /* 3 rows */
-        gap: 15px;
+        grid-template-columns: 1fr; /* 1 column */
+        grid-template-rows: repeat(6, auto);
+        gap: 10px;
     }
 
-    /* Left column */
     .div5 { grid-column: 1; grid-row: 1; }
-    .div7 { grid-column: 1; grid-row: 2; }
-    .div9 { grid-column: 1; grid-row: 3; }
-
-    /* Right column */
-    .div6 { grid-column: 2; grid-row: 1; }
-    .div8 { grid-column: 2; grid-row: 2; }
-    .div10 { grid-column: 2; grid-row: 3; }
+    .div6 { grid-column: 1; grid-row: 2; }
+    .div7 { grid-column: 1; grid-row: 3; }
+    .div8 { grid-column: 1; grid-row: 4; }
+    .div9 { grid-column: 1; grid-row: 5; }
+    .div10 { grid-column: 1; grid-row: 6; }
 
     .div6 img,
     .div8 img,
@@ -477,7 +483,9 @@
     .div1 { grid-column: 1; grid-row: 1; }
     .div2 { grid-column: 1; grid-row: 2; }
 
-    .div1 img,
+    .div1 img{
+        display: none;
+    }
     .div2 img {
         width: 100%;
         height: 100%;
@@ -509,7 +517,6 @@
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
     .content {
-        padding: 20px;
         margin-top: 60px;
     }
 
@@ -532,7 +539,7 @@
     .menu-btn,
     .menu-btn1,
     .menu-btn2 {
-        width: 100%;
+        width: 50%;
         padding: 10px 0;
         font-size: 14px;
     }
@@ -600,7 +607,7 @@
         grid-template-columns: 1fr; /* already 1 column */
         grid-template-rows: repeat(2, auto);
         gap: 10px;
-        padding: 30px 15px;
+        padding: 30px 0px;
     }
 
     .div3 { grid-column: 1; grid-row: 1; }
@@ -615,4 +622,8 @@
 
     .div11 { grid-column: 1; grid-row: 1; }
     .div12 { grid-column: 1; grid-row: 2; }
+
+    .parent{
+        padding: 30px 15px;
+    }
 }

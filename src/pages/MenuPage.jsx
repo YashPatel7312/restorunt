@@ -1,4 +1,4 @@
-import "./MenuPage.css";
+import "../MenuPage.css";
 import menu1 from "../assets/menu1.jpg";
 import menu2 from "../assets/menu2.jpg";
 import menu3 from "../assets/menu3.jpg";

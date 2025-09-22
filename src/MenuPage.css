@@ -14,12 +14,16 @@
 }
 
 .favourits1 {
-    background-image: linear-gradient(#000000b3, #000000b3), url('../assets/favourits.jpg');
+    background-image: linear-gradient(#000000b3, #000000b3), url('../src/assets/favourits.jpg');
     background-position: center;
     background-size: cover;
     margin-bottom: 3rem;
     text-align: center;
     font-size: 30px;
+    justify-content: center !important;
+    height: 100% !important;
+    margin: 56px 0px;
+    padding: 12px 0px;
 }
 
 .favouritstext1 {
