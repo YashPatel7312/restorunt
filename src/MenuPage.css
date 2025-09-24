@@ -96,6 +96,7 @@
 }
 
 /* Fonts dark section */
+.mfont3 { color: #198754; font-size: 1.75rem; font-weight: 700; text-align: center; margin: 1em 0; }
 .mfont4 { color: #fff; font-size: 1.75rem; font-weight: 600; text-align: center; margin-top: 0; }
 .mfont5 { color: #fff; font-size: 1.25rem; text-align: center; line-height: 1; margin-top: 0; }
 .mfont6 { color: #198754; font-size: 1.75rem; font-weight: 700; text-align: center; margin: 1em 0; }
@@ -127,11 +128,11 @@
     }
 
     /* Fonts tablet + color */
-    .mfont1, .mfont2, .mfont3 { color: #212529; }
-    .mfont4, .mfont5, .mfont6 { color: #fff; }
+    .mfont1, .mfont2 { color: #212529; }
+    .mfont4, .mfont5 { color: #fff; }
     .mfont1, .mfont4 { font-size: 1.4rem; }
     .mfont2, .mfont5 { font-size: 1.1rem; }
-    .mfont3, .mfont6 { font-size: 1.4rem; }
+    .mfont3, .mfont6 { font-size: 1.4rem; color: #198754; }
 }
 
 /* Mobile View <= 768px */
@@ -156,9 +157,9 @@
     }
 
     /* Fonts mobile + color */
-    .mfont1, .mfont2, .mfont3 { color: #212529; }
-    .mfont4, .mfont5, .mfont6 { color: #fff; }
+    .mfont1, .mfont2 { color: #212529; }
+    .mfont4, .mfont5 { color: #fff; }
     .mfont1, .mfont4 { font-size: 1.2rem; }
     .mfont2, .mfont5 { font-size: 1rem; }
-    .mfont3, .mfont6 { font-size: 1.2rem; }
+    .mfont3, .mfont6 { font-size: 1.2rem; color: #198754; }
 }

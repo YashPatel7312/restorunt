@@ -73,17 +73,17 @@ export default function MenuPage() {
                         <div className="menuarea">
                             <p className="mfont1">Spicy Beef</p>
                             <p className="mfont2">spicy beef, potatoes, carrots, cheese sauce, spices</p>
-                            <p className="mfont3">£17</p>
+                            <p className="mfont3">$ 17</p>
                         </div>
                         <div className="menuarea">
                             <p className="mfont1">Spaghetti Bolognese</p>
                             <p className="mfont2">onion, carrot, celery, minced meat, spaghetti, parmesan</p>
-                            <p className="mfont3">£15</p>
+                            <p className="mfont3">$ 15</p>
                         </div>
                         <div className="menuarea">
                             <p className="mfont1">Chickpea Curry</p>
                             <p className="mfont2">onion, chickpea, garlic, mushrooms, tomatoes, spices</p>
-                            <p className="mfont3">£12</p>
+                            <p className="mfont3">$ 12</p>
                         </div>
                     </div>
                 </div>
@@ -96,17 +96,17 @@ export default function MenuPage() {
                         <div className="menuarea1">
                             <p className="mfont4">Lemon Cake</p>
                             <p className="mfont5">flour, sugar, baking powder, lemon</p>
-                            <p className="mfont6">£9</p>
+                            <p className="mfont6">$ 9</p>
                         </div>
                         <div className="menuarea1">
                             <p className="mfont4">Cinnamon Rolls</p>
                             <p className="mfont5">flour, salt, sugar, cinnamon, yeast, sour cream, milk</p>
-                            <p className="mfont6">£11</p>
+                            <p className="mfont6">$ 11</p>
                         </div>
                         <div className="menuarea1">
                             <p className="mfont4">Vegan Pancakes</p>
                             <p className="mfont5">flour, sugar, baking powder, soya milk, blueberries</p>
-                            <p className="mfont6">£8</p>
+                            <p className="mfont6">$ 8</p>
                         </div>
                     </div>
                     <div class="menudiv4">

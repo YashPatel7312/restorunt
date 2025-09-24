@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import "../ContactPage.css";
-import Profile1 from "../assets/profile1.jpg";
-import Profile2 from "../assets/profile2.jpg";
-import Profile3 from "../assets/profile3.jpg";
-import Profile4 from "../assets/profile4.jpg";
+import Card from "../components/Card";
+import profile1 from "../assets/profile1.jpg";
+import profile2 from "../assets/profile2.jpg";
+import profile3 from "../assets/profile3.jpg";
+import profile4 from "../assets/profile4.jpg";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -81,8 +82,8 @@ export default function ContactPage() {
   return (
     <div>
       <div className="favourits3">
-          <h1 className="favouritstext3">CONTACT</h1>
-        </div>
+        <h1 className="favouritstext3">CONTACT</h1>
+      </div>
       <section className="contactsection">
         <div className="contactparent3">
           <div className="contactdiv11">
@@ -209,80 +210,33 @@ export default function ContactPage() {
         <h1 className="contactreviewfont">REVIEW</h1>
         <div className="contactreviewparent">
           <div className="contactreviewdiv1">
-            <div className="contacttestimonial-card">
-              <div className="contacttestimonial-text">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi iste culpa perspiciatis. Magnam, explicabo
-                  cumque.
-                </p>
-              </div>
-              <div className="contacttestimonial-footer">
-                <img
-                  src={Profile1}
-                  alt="Profile1"
-                  className="contactprofile-img"
-                />
-                <h3 className="contactprofile-name">John Mike</h3>
-              </div>
-            </div>
+            <Card
+              title="John Mike"
+              text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum et voluptate minus error suscipit officiis placeat repudiandae quibusdam officia tempora, reprehenderit, enim, quidem exercitationem laborum!"
+              image={profile1}
+              className="about-card"
+            />
           </div>
           <div className="contactreviewdiv2">
-            <div className="contacttestimonial-card">
-              <div className="contacttestimonial-text">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Dolores, mollitia?
-                </p>
-              </div>
-              <div className="contacttestimonial-footer">
-                <img
-                  src={Profile2}
-                  alt="Profile2"
-                  className="contactprofile-img"
-                />
-                <h3 className="contactprofile-name">Maria Cruz</h3>
-              </div>
-            </div>
+            <Card
+              title="Maria Cruz"
+              text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum et voluptate minus error suscipit officiis placeat repudiandae quibusdam officia tempora, reprehenderit, enim, quidem exercitationem laborum!"
+              image={profile2}
+            />
           </div>
           <div className="contactreviewdiv3">
-            <div className="contacttestimonial-card">
-              <div className="contacttestimonial-text">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quam dolor itaque reprehenderit minus tempore. Iste
-                  quibusdam facilis excepturi nihil maiores!
-                </p>
-              </div>
-              <div className="contacttestimonial-footer">
-                <img
-                  src={Profile3}
-                  alt="Profile3"
-                  className="contactprofile-img"
-                />
-                <h3 className="contactprofile-name">Anna Gold</h3>
-              </div>
-            </div>
+            <Card
+              title="Anna Gold"
+              text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum et voluptate minus error suscipit officiis placeat repudiandae quibusdam officia tempora, reprehenderit, enim, quidem exercitationem laborum!"
+              image={profile3}
+            />
           </div>
           <div className="contactreviewdiv4">
-            <div className="contacttestimonial-card">
-              <div className="contacttestimonial-text">
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Rerum et voluptate minus error suscipit officiis placeat
-                  repudiandae quibusdam officia tempora, reprehenderit,
-                  enim, quidem exercitationem laborum!
-                </p>
-              </div>
-              <div className="contacttestimonial-footer">
-                <img
-                  src={Profile4}
-                  alt="Profile"
-                  className="contactprofile-img"
-                />
-                <h3 className="contactprofile-name">Nick Burn</h3>
-              </div>
-            </div>
+            <Card
+              title="Nick Burn"
+              text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum et voluptate minus error suscipit officiis placeat repudiandae quibusdam officia tempora, reprehenderit, enim, quidem exercitationem laborum!"
+              image={profile4}
+            />
           </div>
         </div>
       </div>

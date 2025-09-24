@@ -1,13 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import "../HomePage.css";
 import aboutImage from "../assets/about us.jpg";
+import footimage from "../assets/where us.jpg";
+
 import g1 from "../assets/grid 1.jpg";
 import g2 from "../assets/grid 2.jpg";
 import g3 from "../assets/grid 3.jpg";
 import g4 from "../assets/grid 4.jpg";
 import g5 from "../assets/grid 5.jpg";
 import g6 from "../assets/grid 6.jpg";
-import footimage from "../assets/where us.jpg";
+import CustomGalleryGrid from "../components/CustomGalleryGrid";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -74,7 +76,7 @@ export default function HomePage() {
                     </li>
                   </ul>
                 </div>
-                <div className="div4">
+                <div className="div4" >
                   <h3 className="cf">Drinks</h3>
                   <ul>
                     <li>
@@ -102,29 +104,9 @@ export default function HomePage() {
           {/* Gallery Section */}
           <aside className="gallery">
             <h1 className="gallerytext">Our Gallery</h1>
-            <div className="galleryset">
-              <div className="parent2">
-                <div className="div5">
-                  <img src={g1} alt="Gallery 1" className="image2" />
-                </div>
-                <div className="div6">
-                  <img src={g2} alt="Gallery 2" className="image2" />
-                </div>
-                <div className="div7">
-                  <img src={g3} alt="Gallery 3" className="image2" />
-                </div>
-                <div className="div8">
-                  <img src={g4} alt="Gallery 4" className="image2" />
-                </div>
-                <div className="div9">
-                  <img src={g5} alt="Gallery 5" className="image2" />
-                </div>
-                <div className="div10">
-                  <img src={g6} alt="Gallery 6" className="image2" />
-                </div>
-              </div>
-            </div>
+            <CustomGalleryGrid images={[g1, g2, g3, g4, g5, g6]} baseClass="" />
           </aside>
+
 
           {/* Footer / Where Section */}
           <section className="contact-info">

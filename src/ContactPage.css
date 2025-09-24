@@ -24,42 +24,12 @@
     border: none;
 }
 
-.contacttestimonial-card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-.contacttestimonial-text {
-    padding: 20px;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #212529;
-    border-bottom: 1px solid #ddd;
-}
-
 .contacttestimonial-footer {
     display: flex;
     align-items: center;
     gap: 15px;
     padding: 15px 20px;
     background: #f8f9fa;
-}
-
-.contactprofile-img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.contactprofile-name {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #198754; /* Bootstrap green */
 }
 
 .contactparent3 {
@@ -314,20 +284,6 @@ textarea {
     .contactreviewdiv3,
     .contactreviewdiv4 {
         grid-column: 1 / -1;
-    }
-
-    .contacttestimonial-card {
-        max-width: 100%;
-        margin: 10px auto;
-    }
-
-    .contactprofile-img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .contactprofile-name {
-        font-size: 1rem;
     }
 
     .contactreviewfont {

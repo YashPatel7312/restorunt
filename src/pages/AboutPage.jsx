@@ -7,10 +7,12 @@ import g3 from "../assets/grid 3.jpg";
 import g4 from "../assets/grid 4.jpg";
 import g5 from "../assets/grid 5.jpg";
 import g6 from "../assets/grid 6.jpg";
-import Profile1 from "../assets/profile1.jpg";
-import Profile2 from "../assets/profile2.jpg";
-import Profile3 from "../assets/profile3.jpg";
-import Profile4 from "../assets/profile4.jpg";
+import Card from "../components/Card";
+import profile1 from "../assets/profile1.jpg";
+import profile2 from "../assets/profile2.jpg";
+import profile3 from "../assets/profile3.jpg";
+import profile4 from "../assets/profile4.jpg";
+import CustomGalleryGrid from "../components/CustomGalleryGrid";
 
 export default function AboutPage() {
   return (
@@ -58,85 +60,40 @@ export default function AboutPage() {
         </div>
         <aside className="aboutgallery">
           <h1 className="aboutgalleryfont">IMAGE GALLERY</h1>
-          <div className="aboutparent2">
-            <div className="aboutdiv5">
-              <img src={g1} alt="aboutimage2" className="aboutimage2" />
-            </div>
-            <div className="aboutdiv6">
-              <img src={g2} alt="aboutimage2" className="aboutimage2" />
-            </div>
-            <div className="aboutdiv7">
-              <img src={g3} alt="aboutimage2" className="aboutimage2" />
-            </div>
-            <div className="aboutdiv8">
-              <img src={g4} alt="aboutimage2" className="aboutimage2" />
-            </div>
-            <div className="aboutdiv9">
-              <img src={g5} alt="aboutimage2" className="aboutimage2" />
-            </div>
-            <div className="aboutdiv10">
-              <img src={g6} alt="aboutimage2" className="aboutimage2" />
-            </div>
-          </div>
+          <CustomGalleryGrid images={[g1, g2, g3, g4, g5, g6]} baseClass="about" />
         </aside>
         <div className="aboutreview">
           <h1 className="aboutreviewfont">REVIEW</h1>
           <div className="aboutreviewparent">
             <div className="aboutreviewdiv1">
-              <div className="testimonial-card">
-                <div className="testimonial-text">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iste culpa perspiciatis.
-                    Magnam, explicabo cumque.
-                  </p>
-                </div>
-                <div className="testimonial-footer">
-                  <img src={Profile1} alt="Profile1" className="profile-img" />
-                  <h3 className="profile-name">John Mike</h3>
-                </div>
-              </div>
+              <Card
+                title="John Mike"
+                text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum et voluptate minus error suscipit officiis placeat repudiandae quibusdam officia tempora, reprehenderit, enim, quidem exercitationem laborum!"
+                image={profile1}
+                className="about-card"
+              />
             </div>
             <div className="aboutreviewdiv2">
-              <div className="testimonial-card">
-                <div className="testimonial-text">
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, mollitia?
-                  </p>
-                </div>
-                <div className="testimonial-footer">
-                  <img src={Profile2} alt="Profile2" className="profile-img" />
-                  <h3 className="profile-name">Maria Cruz</h3>
-                </div>
-              </div>
+              <Card
+                title="Maria Cruz"
+                text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum et voluptate minus error suscipit officiis placeat repudiandae quibusdam officia tempora, reprehenderit, enim, quidem exercitationem laborum!"
+                image={profile2}
+              />
             </div>
             <div className="aboutreviewdiv3">
-              <div className="testimonial-card">
-                <div className="testimonial-text">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor itaque 
-                    reprehenderit minus tempore. Iste quibusdam facilis excepturi nihil maiores!
-                  </p>
-                </div>
-                <div className="testimonial-footer">
-                  <img src={Profile3} alt="Profile3" className="profile-img" />
-                  <h3 className="profile-name">Anna Gold</h3>
-                </div>
-              </div>
+              <Card
+                title="Anna Gold"
+                text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum et voluptate minus error suscipit officiis placeat repudiandae quibusdam officia tempora, reprehenderit, enim, quidem exercitationem laborum!"
+                image={profile3}
+              />
             </div>
             <div className="aboutreviewdiv4">
-              <div className="testimonial-card">
-                <div className="testimonial-text">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum et voluptate minus 
-                    error suscipit officiis placeat repudiandae quibusdam officia tempora, reprehenderit, 
-                    enim, quidem exercitationem laborum!
-                  </p>
-                </div>
-                <div className="testimonial-footer">
-                  <img src={Profile4} alt="Profile" className="profile-img" />
-                  <h3 className="profile-name">Nick Burn</h3>
-                </div>
-              </div>
+              <Card
+                title="Nick Burn"
+                text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum et voluptate minus error suscipit officiis placeat repudiandae quibusdam officia tempora, reprehenderit, enim, quidem exercitationem laborum!"
+                image={profile4}
+                className="about-card"
+              />
             </div>
           </div>
         </div>
