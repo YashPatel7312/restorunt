@@ -5,32 +5,36 @@
   align-items: center;
   background-color: #f8f9fa;
   width: 100%;
+  height: 60px;
+  /* smaller navbar height */
   position: fixed;
   z-index: 1030;
   top: 0;
-  padding: 8px 20px; /* 👈 height control */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* optional shadow */
+  right: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  padding: 0 80px;
 }
 
 .logo2 {
   color: #198754;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.5rem;
-  text-align: start;
+  padding: 11px auto 0px auto;
 }
 
 .nav {
   display: flex;
   align-items: center;
+  gap: 15px;
 }
 
 .nav-btn {
-  color: #21252993;
+  color: #000000a6;
   text-decoration: none;
   font-weight: 500;
-  padding: 8px 15px;
   border-radius: 5px;
+  text-transform: uppercase;
   transition: background 0.3s;
 }
 
@@ -45,98 +49,199 @@
   flex-direction: column;
   cursor: pointer;
   gap: 6px;
-  padding: 10px 15px;
   border-radius: 8px;
-  z-index: 2000;             /* 👈 always above navbar */
-  background: transparent;   /* 👈 no background box */
+  z-index: 2000;
+  border: 1px solid #00000026;
+  padding: 6px 12px;
 }
+
 
 .hamburger span {
-  height: 3px;
-  width: 25px;
-  background-color: #000;  /* 👈 use your green brand color */
+  height: 4px;
+  width: 30px;
+  background-color: #00000065;
   border-radius: 3px;
-  transition: all 0.3s step-start;
+  transition: all 0.3s ease;
 }
 
-/* Show only on mobile */
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-}
-
-/* Dropdown logo inside nav */
+/* Dropdown logo inside menu */
 .dropdown-logo {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #198754; /* Unique green */
-  padding: 15px 20px;
-  text-align: left;   /* 👈 force left align */
-  border-bottom: 1px solid #ddd;
-  display: block;     /* make it behave like full-width link */
-  width: 100%;
-  display: none;
+  display: flex;
+  color: #198754;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: start;
 }
 
-/* Responsive navbar */
+/* Responsive Navbar */
+/* ======================= mobile ================================= */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
+    position: absolute;
+    /* added */
+    top: 10px;
+    /* adjust as needed */
+    right: 20px;
   }
 
+  /* Hide nav links by default */
   .nav {
-    display: none;
+    display: flex;
     flex-direction: column;
     background-color: #f8f9fa;
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 0;
     width: 100%;
-    text-align: left;  /* 👈 left align */
-    padding: 8px 0;
-    gap: 0;
+    text-align: left;
+    padding: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.40s ease-in-out;
+    margin-top: 60px;
   }
 
+  .navbar {
+    padding: 5px 20px;
+  }
+
+
+  /* Open menu */
   .nav.open {
-    display: flex;
+    border-top: 1px solid purple;
+    max-height: 550px;
+    /* enough for all links + logo */
   }
 
   .nav-btn {
-    padding: 10px 20px;
+    padding: 2px 20px;
     width: 100%;
-    text-align: left; /* 👈 left align links */
+    color: #000000a6;
+    text-align: left;
+  }
+
+  .nav-btn:hover {
+    color: #000;
+  }
+
+  /* Show dropdown logo always in mobile menu */
+  .dropdown-logo {
+    display: block;
+  }
+
+}
+
+/* =================== tab ====================================== */
+@media (min-width: 1024) {
+  .navbar {
+    padding: 0px 50px;
   }
 }
+
 
 /* ---------------- Footer ---------------- */
 .footer {
-  text-align: center;
-  justify-content: space-around;
-  padding: 15px;
-  background-color: #f8f9fa;
-  color: #000;
-  font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    line-height: 1.5;
+    background-color: #f8f9fa;
+    color: #212529;
+    font-size: 16px;
+    border: 1px solid purple;
 }
 
 /* ---------------- General ---------------- */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-/* Show only on mobile when nav is open */
-@media (max-width: 768px) {
-  .dropdown-logo {
-    display: block;
-    padding: 1rem;
-    font-weight: bold;
-    text-align: center;
-  }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif;
+  line-height: 1.6;
+  color: #212529;
+}
+
+/* ---------------- Fullscreen background sections ---------------- */
+.fullscreen-bg {
+  width: 100vw;
+  height: 100vh;
+  /* full viewport height */
+  background-size: cover;
+  /* cover entire container */
+  background-position: center;
+  /* center the image */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  /* center children horizontally */
+  align-items: center;
+  /* center children vertically */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional overlay */
+.fullscreen-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  /* dark overlay for text readability */
+  z-index: 1;
+}
+
+/* ---------------- Container for content ---------------- */
+.container {
+  max-width: 1200px;
+  /* content width */
+  width: 100%;
+  margin: 0 auto;
+  /* center horizontally */
+  padding: 0 20px;
+  /* spacing from edges */
+  position: relative;
+  /* above overlay if inside fullscreen-bg */
+  z-index: 2;
+  /* make content above overlay */
+}
+
+/* ---------------- Text / Cards / Grid inside container ---------------- */
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #198754;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
